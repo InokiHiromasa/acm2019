@@ -1,0 +1,29 @@
+
+日本語
+タイトル：高品質なスマートモビリティシステム開発へ向けた交通シミュレータへのCOP適用
+
+概要：
+近年関心の高まっている「スマートモビリティシステム」の構築の際には、システムが社会にどのような影響を及ぼすかを確認するために、交通シミュレータを用いたシミュレーションを行う必要がある。この際、考えうるあらゆる状況をテストするため、何度もシミュレータの状況設定を変更してシミュレーションを行う必要があるが、現在は再現したい状況ごとに逐一シミュレータ構築をする必要があるという問題が存在している。これは、開発効率が非常に落ちるだけではなく、シミュレータを利用して開発されるソフトウェアの構成も場当たり的になるという品質問題にも繋がっている。
+
+そこで本研究では、COP（Context-oriented Programming、文脈指向プログラミング）を交通シミュレータに適用することで、柔軟で保守性・再利用性の高い交通シミュレータの実現を目指す。COPを交通シミュレータに適用することにより、例えば各車両の速度設定やルート設定など、状況によって変更したい事柄をそれぞれレイヤにまとめ、それを重ね合わせることで様々な状況を再現することが可能な交通シミュレータが実現できる。状況ごとに振る舞いを整理することによる保守性の向上、似た状況のシミュレートをする際にレイヤを再利用できることによる開発効率の向上を望むことができ、より高品質なスマートモビリティシステムの効率の良い開発に貢献することができると考えている。
+
+提案手法の有用性を示すためのケーススタディとして、COPを適用したシミュレータを利用して駐車場推薦システムを開発する。駐車場推薦システムのシミュレートでは、車両の速度設定切り替えのような基本的なシミュレータ設定の他にも考慮すべき事柄が存在する。
+例えば、割り当てシステムの評価を行うために、複数の割り当てシステムの切り替える、さらには異なる割り当てシステムが混在している状況を再現する必要がある。したがって、COPを適用した交通シミュレータを用いることによる恩恵が大きく、効果を実感しやすいと推測される。
+
+提案手法の評価のために、レイヤを追加した際のコード増加量や凝集度、シミュレーションの状況設定を行う際のコード行数の従来手法との比較に着目し、保守性・再利用性の向上を示す。
+
+
+English(仮。google翻訳ぶちこみ文)
+Title:COP application to traffic simulator for high quality smart mobility system development
+
+Abstract:(Intro?)
+When constructing a "smart mobility system", which has been growing in interest in recent years, it is necessary to carry out a simulation using a traffic simulator in order to confirm how the system affects the society. At this time, in order to test every conceivable situation, it is necessary to change the situation setting of the simulator many times to perform simulation, but there is a problem that it is necessary to construct one simulator for each situation to be reproduced at present. doing. This not only leads to a very low development efficiency, but also leads to a quality problem that the configuration of software developed using a simulator is also ad hoc.
+
+In this study, we aim to realize flexible, maintainable and highly reusable traffic simulator by applying COP (Context-oriented Programming) to traffic simulator. By applying the COP to a traffic simulator, for example, it is possible to summarize various situations by layering things that you want to change depending on the situation, such as speed setting and route setting of each vehicle, on top of each other. Can be realized. You can hope for better maintainability by organizing the behavior according to the situation, and improvement of development efficiency by reusing layers when simulating similar situations, and the efficiency of the higher quality smart mobility system We believe that we can contribute to good development.
+
+As a case study to show the usefulness of the proposed method, we will develop a parking lot recommendation system using a simulator applied COP. In simulating a parking lot recommendation system, there are other considerations besides basic simulator settings such as vehicle speed setting switching.
+For example, in order to evaluate an assignment system, it is necessary to reproduce a situation in which switching of a plurality of assignment systems and further different assignment systems are mixed. Therefore, it is assumed that the benefit of using a traffic simulator to which the COP is applied is large and it is easy to realize the effect.
+
+Focusing on the comparison of the amount of increase in code and cohesion when adding a layer, and the number of lines of code when setting the condition of simulation to the conventional method, for the evaluation of the proposed method
+It shows the improvement of reusability.
+
